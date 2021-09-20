@@ -1,10 +1,14 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta charset="utf-8">
+        <title>Christopher Tamayo</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--TODO: make nav bar sticky-->
         <nav class="main-nav">
             <span><a href=#>Home</a></span>
-            <span><a href=#>About</a></span>
-            <span><a href=#>Resume</a></span>
+            <span><a href=#about>About</a></span>
+            <span><a href=#resume>Resume</a></span>
             <span><a href=#>Contact</a></span>
         </nav>
         <link rel="stylesheet" href="styles.css">
@@ -24,121 +28,200 @@
         </section>
 
         <!--ABOUT ME-->
+        <a name="about"></a>
         <section class="content-section container about-me-section">
-            <h3 class="about-me-header">About Me</h3>
+            <h3 class="section-header section-header-about">About Me</h3>
             <img class="about-image" src="images/prof_headshot_chris_tamayo.jpg">
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis totam nobis laboriosam ipsam praesentium molestias, aspernatur vel iure excepturi vitae explicabo fugiat ex exercitationem inventore eveniet quae distinctio voluptatibus ipsa facilis est? Consectetur incidunt commodi cupiditate quibusdam nam quam maiores eveniet hic natus, quos omnis veritatis officiis reprehenderit aut accusantium.</p>
+            <!--TODO: Fix about me section, flex so that text appears in middle vertically-->
+            <p>Sophomore at Santa Clara University in California. Majoring in Computer Science and minoring in Mathematics</p>
+            <p>Most recent role: IT Banking Systems Intern at American Savings Bank</p>
         </section>
 
         <!--RESUME-->
-        <section>
+        <!--TODO: add download resume button, add links to images and hover effect-->
+        <a name="resume"></a>
+        <section class="content-section container resume-section-whole">
             <h3 class="section-header">Resume</h3>
             <!--Education section-->
-            <h4 class="resume-section-header">Education</h4>
-            <div>
-                <img src="images/scu.jpg">
-                <span>Santa Clara University, CA</span>
-                <span>Bachelor of Science in Computer Science</span>
-                <span>September 2020 - June 2024</span>
-                <span>GPA: 4.0/4.0</span>
-                <ul>
-                    <li>GPA: 4.0/4.0</li>
-                    <li>Relevant Courses: Object-Oriented Programming, Data Structures</li>
-                    <li>Activities and Societies: Association for Computing Machinery, Theta Tau (Professional Engineering Fraternity)</li>
-                </ul>
+            <div class="resume-section">
+                <h4 class="resume-section-header">Education</h4>
+                <div class="resume-section-block">
+                    <div>
+                        <a href="https://www.scu.edu/" target="_blank"><img class="resume-image" href="https://www.youtube.com/" src="images/scu.jpg"></a>
+                    </div>
+                    
+                    <div class="resume-row-text">
+                        <p>
+                            <span class="resume-row-title">Santa Clara University, CA</span>
+                            <span class="resume-dates">September 2020 - June 2024</span>
+                            <br>
+                            <span>Computer Science, B.S.</span>
+                        </p>
+                        <br>
+                        <ul>
+                            <li>GPA: 4.0/4.0</li>
+                            <li>Relevant Courses: Object-Oriented Programming, Data Structures</li>
+                            <li>Activities and Societies: Association for Computing Machinery, Theta Tau (Professional Engineering Fraternity)</li>
+                        </ul>
+
+                        <div class="skill-section">
+                            <span class="resume-skill">C++</span>
+                        </div>
+
+                    </div>
+                </div>
+                
+                <div class="resume-section-block">
+                    <div>
+                        <a href="https://www.punahou.edu/" target="_blank"><img class="resume-image" src="images/pun.png"></a>
+                    </div>
+                    
+                    <div class="resume-row-text">
+                        <p>
+                            <span class="resume-row-title">Punahou School, HI</span>
+                            <span class="resume-dates">August 2016 - May 2020</span>
+                            <br>
+                            <span class="resume-school-degree">High School Diploma</span>
+                        </p>
+                        <br>
+                        <ul>
+                            <li>GPA: 3.96/4.0</li>
+                            <li>Acknowledgments: Graduated with Honors, National Honors Society, Varsity Basketball Captain, Punahou Carnival Booth Chair, AP Scholar with Distinction, AP Physics 1 Excellence Award (top student in course of over 100 students)</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
 
-            <div>
-                <img src="images/pun.png">
-                <span>Punahou School, HI</span>
-                <span>High School Diploma</span>
-                <span>August 2016 - May 2020</span>
-                <ul>
-                    <li>GPA: 3.96/4.0</li>
-                    <li>Acknowledgments: Graduated with Honors, National Honors Society, Varsity Basketball Captain, Punahou Carnival Booth Chair, AP Scholar with Distinction, AP Physics 1 Excellence Award (top student in course of over 100 students)</li>
-                </ul>
-            </div>
+
 
             <!--Work section-->
-            <h4 class="resume-section-header">Work Experience</h4>
-            <div>
-                <div>
-                    <img src="images/asb.png">
-                    <span>American Savings Bank, HI</span>
-                    <span>June 2021 - August 2021</span>
-                    <span>IT Banking Systems Intern</span>
-                    <ul>
-                        <li>Developed daily scrum order randomizer web application using HTML, CSS, & JavaScript in ASP.NET MVC framework</li>
-                        <li>Documented troubleshooting steps for deploying MuleSoft projects in Anypoint Studio</li>
-                        <li>Corrected data mapping from web application to Salesforce in MuleSoft data loading services</li>
-                    </ul>
-                    <div class="btn-section">
-                        <button type="button">HTML</button>
-                        <button type="button">CSS</button>
-                        <button type="button">JavaScript</button>
-                        <button type="button">C#</button>
-                        <button type="button">ASP.NET MVC</button>
-                        <button type="button">MuleSoft</button>
-                        <button type="button">Salesforce</button>
-                        <button type="button">Git</button>
+            <div class="resume-section">
+                <h4 class="resume-section-header">Work Experience</h4>
+                <div class="resume-section-block">
+                    <div>
+                        <a href="https://www.asbhawaii.com/" target="_blank"><img class="resume-image" src="images/asb.png"></a>
+                    </div>
+            
+                    <div class="resume-row-text">         
+                        <p>
+                            <span class="resume-row-title">IT Banking Systems Intern</span>
+                            <span class="resume-dates">June 2021 - August 2021</span>
+                            <br>
+                            <span>American Savings Bank, HI</span>
+                        </p>               
+                        <br>
+                        <ul>
+                            <li>Developed daily scrum order randomizer web application using HTML, CSS, & JavaScript in ASP.NET MVC framework</li>
+                            <li>Documented troubleshooting steps for deploying MuleSoft projects in Anypoint Studio</li>
+                            <li>Corrected data mapping from web application to Salesforce in MuleSoft data loading services</li>
+                        </ul>
+                        <div class="skill-section">
+                            <span class="resume-skill">HTML</span>
+                            <span class="resume-skill">CSS</span>
+                            <span class="resume-skill">JavaScript</span>
+                            <span class="resume-skill">C#</span>
+                            <span class="resume-skill">ASP.NET MVC</span>
+                            <span class="resume-skill">MuleSoft</span>
+                            <span class="resume-skill">Salesforce</span>
+                            <span class="resume-skill">Git</span>
+                        </div>
                     </div>
                 </div>
 
-                <div>
-                    <img src="images/natsunoya.jpg">
-                    <span>Natsunoya Teahouse, HI</span>
-                    <span>June 2019 - August 2019</span>
-                    <span>Caterer and Dishwasher</span>
-                    <ul>
-                        <li>Transported and served food, prepared dining room setup at funerals and party events of 50-100 people</li>
-                        <li>Maintained sanitary standards in kitchen by cleaning surfaces, sweeping floors, and emptying trash</li>
-                        <li>Washed and dried hundreds of dishes per night and organized cooking supplies for kitchen staff’s convenience</li>
-                    </ul>
+                <div class="resume-section-block">
+                    <div>
+                        <a href="https://www.natsunoyahawaii.com/" target="_blank"><img class="resume-image" src="images/natsunoya.jpg"></a>
+                    </div>
+        
+                    <div class="resume-row-text">
+                        <p>
+                            <span class="resume-row-title">Caterer and Dishwasher</span>
+                            <span class="resume-dates">June 2019 - August 2019</span>
+                            <br>
+                            <span>Natsunoya Teahouse, HI</span>
+                        </p>
+                        <br>
+                        <ul>
+                            <li>Transported and served food, prepared dining room setup at funerals and party events of 50-100 people</li>
+                            <li>Maintained sanitary standards in kitchen by cleaning surfaces, sweeping floors, and emptying trash</li>
+                            <li>Washed and dried hundreds of dishes per night and organized cooking supplies for kitchen staff’s convenience</li>
+                        </ul>
+                    </div>
+                    
                 </div>
             </div>
 
-            <h4 class="resume-section-header">Volunteer Experience</h4>
-            <div>
-                <div>
-                    <img src="images/pun.png">
-                    <span>Punahou School, HI</span>
-                    <span>December 2019 - March 2020</span>
-                    <span>High School Tutor</span>
-                    <ul>
-                        <li>Tutored 2-3 high school students weekly in math levels up to AP Calculus AB and physics levels up to AP Physics 1</li>
-                        <li>Clarified misunderstood concepts and facilitated students through difficult problems</li>
-                    </ul>
+            <!--Volunteer experience section-->
+            <div class="resume-section">
+                <h4 class="resume-section-header">Volunteer Experience</h4>
+                <div class="resume-section-block">
+                    <div>
+                        <a href="https://www.punahou.edu/" target="_blank"><img class="resume-image" src="images/pun.png"></a>
+                    </div>
+                    <div class="resume-row-text">
+                        <p>
+                            <span class="resume-row-title">High School Tutor</span>
+                            <span class="resume-dates">December 2019 - March 2020</span>
+                            <br><span>Punahou School, HI</span>
+                        </p>
+                        <br>
+                        <ul>
+                            <li>Tutored 2-3 high school students weekly in math levels up to AP Calculus AB and physics levels up to AP Physics 1</li>
+                            <li>Clarified misunderstood concepts and facilitated students through difficult problems</li>
+                        </ul>
+                    </div>
+                    
                 </div>
 
-                <div>
-                    <img src="images/variety-school.jpg">
-                    <span>Variety School of Hawaii, HI</span>
-                    <span>August 2019 - December 2019</span>
-                    <span>Teaching Assistant</span>
-                    <ul>
-                        <li>Supervised 2-5 students weekly in an after-school program for students with learning differences, ensuring a fun and safe learning environment
-                        </li>
-                    </ul>
+                <div class="resume-section-block">
+                    <div>
+                        <a href="https://www.varietyschool.org/" target="_blank"><img class="resume-image" src="images/variety-school.jpg"></a>
+                    </div>
+                    
+                    <div class="resume-row-text">
+                        <p>
+                            <span class="resume-row-title">Teaching Assistant</span>
+                            <span class="resume-dates">August 2019 - December 2019</span>
+                            <br><span>Variety School of Hawaii, HI</span>
+                        </p>
+                        <br>
+                        <ul>
+                            <li>Supervised 2-5 students weekly in an after-school program for students with learning differences, ensuring a fun and safe learning environment
+                            </li>
+                        </ul>
+                    </div>
+                    
                 </div>
 
-                <div>
-                    <img src="images/h4c.png">
-                    <span>Hoops for Christ Basketball Club</span>
-                    <span>July 2019 - November 2019</span>
-                    <span>Basketball Head Coach</span>
-                    <ul>
-                        <li>Conducted drills in practice twice a week and coached games once a week for team of 12 sixth-grade boys</li>
-                        <li>Built team comradery, taught offensive and defensive team tactics, and improved individual skill sets</li>
-                    </ul>
+                <div class="resume-section-block">
+                    <div>
+                        <a href="http://www.h4chawaii.com/" target="_blank"><img class="resume-image" src="images/h4c.png"></a>
+                    </div>
+
+                    
+                    <div class="resume-row-text">
+                        <p>
+                            <span class="resume-row-title">Basketball Head Coach</span>
+                            <span class="resume-dates">July 2019 - November 2019</span>
+                            <br><span>Hoops for Christ Basketball Club, HI</span>
+                        </p>
+                        <br>
+                        <ul>
+                            <li>Conducted drills in practice twice a week and coached games once a week for team of 12 sixth-grade boys</li>
+                            <li>Built team comradery, taught offensive and defensive team tactics, and improved individual skill sets</li>
+                        </ul>
+                    </div>
+                    
                 </div>
             </div>
 
             <!--Projects-->
-            <h3>Projects</h3>
-            <div>
+            <!--TODO: View project AND view code button-->
+            <div class="resume-section content-section">
+                <h4 class="resume-section-header">Projects</h4>
                 <div>
                     <span>Responsive Portfolio Website</span>
-                    <img src="images/h4c.png"> <!--TODO: Change to actual project pic-->
+                    <img class="resume-image" src="images/h4c.png"> <!--TODO: Change to actual project pic-->
                     <span>Project Description goes here: Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque ut aliquam, sint culpa ipsum recusandae soluta obcaecati iusto cumque eveniet temporibus magni nostrum, architecto tempore molestiae sit quia ipsam placeat repudiandae nam. Quod alias qui optio, reprehenderit ea molestias facilis.</span>
                     <div>
                         <button type="button">HTML</button>
@@ -149,7 +232,7 @@
 
                 <div>
                     <span>Financial Literacy Game</span>
-                    <img src="images/h4c.png"> <!--TODO: Change to actual project pic-->
+                    <img class="resume-image" src="images/h4c.png"> <!--TODO: Change to actual project pic-->
                     <span>Project Description goes here: Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam quam dolorum nisi molestias. Itaque nemo architecto repudiandae aliquid laboriosam corrupti mollitia enim vero! Minima beatae consequatur nostrum delectus veritatis exercitationem deserunt quisquam atque illo ullam, ducimus est incidunt dolores molestiae!</span>
                     <div>
                         <button type="button">HTML</button>
@@ -159,15 +242,15 @@
                 </div>
             </div>
 
-            <button type="button"><a href="pdf/ChristopherTamayo_Resume.pdf">Download Resume</a></button>
+            <a class="resume-btn" href="pdf/ChristopherTamayo_Resume.pdf" download><span class="resume-btn-text">Download Resume</span></a>
         </section>
 
         <footer>
             <span>@2021 Christopher Tamayo</span>
             <div>
-                <a href="mailto:chriswtamayo@gmail.com" target="_blank"><img src="images/email.png"></a>
-                <a href="https://www.linkedin.com/in/christopher-tamayo/" target="_blank"><img src="images/linkedin.png"></a>
-                <a href="https://github.com/Chris-Tamayo" target="_blank"><img src="images/github.png"></a>
+                <a href="mailto:chriswtamayo@gmail.com" target="_blank"><img class="icon-image" src="images/email.png"></a>
+                <a href="https://www.linkedin.com/in/christopher-tamayo/" target="_blank"><img class="icon-image" src="images/linkedin.png"></a>
+                <a href="https://github.com/Chris-Tamayo" target="_blank"><img class="icon-image" src="images/github.png"></a>
             </div>
         </footer>
     </body>

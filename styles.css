@@ -1,0 +1,287 @@
+* {
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: lighter;
+    background-color: #eee;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+}
+
+.content-section {
+    margin: 1em;
+}
+
+.container {
+    /* max-width: 900px; */
+    margin: 0 auto;
+    padding: 0 1.5em;
+}
+
+.name-title {
+    font-size: 4em;
+    text-align: center;
+    margin: 10px 30px;
+    font-weight: lighter;
+}
+
+.aspiration-title {
+    margin: 5px;
+    font-size: 2em;
+    text-align: center;
+    font-weight: lighter;
+}
+
+.intro-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 500px;
+    background-color: #eee;
+    margin: 0;
+    padding: 0;
+}
+
+.icon-image {
+    width: 25px;
+    margin: 1em;
+}
+
+.icon-section-intro {
+    text-align: center;
+}
+
+.main-nav {
+    font-size: 1.1em;
+    border-bottom: 1px solid black;
+    text-align: center;
+    font-weight: normal;
+}
+
+.main-nav a {
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    padding: 1em;
+}
+
+.main-nav a:hover {
+    background-color: lightblue;
+}
+
+.section-header {
+    font-weight: bold;
+    /*font-size: 2em;*/
+    text-align: center;
+    margin: 1em;
+}
+
+.section-header-about {
+    background-color: lightblue;
+    margin: 0;
+}
+
+.about-image {
+    border-radius: 50%;
+    border: 2px solid black;
+    width: 200px;
+    margin: 15px 15px 15px 15px;
+    float: right;
+}
+
+.about-me-section p {
+    margin: 15px;
+    background-color: lightblue;
+    font-size: 20px;
+}
+
+.about-me-section {
+    vertical-align: middle;
+    max-width: 80%;
+    background: lightblue;
+    min-height: 300px;
+    padding: 1em;
+    margin-bottom: 7.5em;
+    font-size: 20px;
+}
+
+.resume-section-header {
+    font-weight: bold;
+    margin: 30px 20px;
+    font-size: 1em;
+    text-decoration: underline;
+    letter-spacing: 3px;
+}
+
+.resume-image {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    float: left;
+    margin: 0 15px;
+}
+
+.resume-section {
+    max-width: 1000px;
+    margin: 0 20px 50px 20px;
+}
+
+.resume-section li {
+    margin-left: 20px;
+}
+
+.resume-section-whole {
+    max-width: 1200px;
+}
+
+.resume-section-block {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.resume-row-title {
+    font-weight: bold;
+    flex-grow: 1;
+}
+
+.resume-dates {
+    float: right;
+    font-style: italic;
+}
+
+.resume-row-text {
+    width: 100%;
+    margin-top: 8px;
+}
+
+.resume-section-whole ul {
+    margin: 0;
+    padding-left: 0;
+    list-style-type: circle;
+}
+
+.resume-section-whole {
+    font-size: 20px;
+}
+
+.resume-section-whole p{
+    margin: 0;
+}
+
+.resume-skill {
+    display: inline-block;
+    border:lightblue solid 1px;
+    padding: 10px 20px;
+    font-size: 15px;
+    margin-right: 10px;
+    margin-top: 10px;
+    border-radius: 8px;
+}
+
+.skill-section {
+    margin: 20px 0;
+}
+
+.resume-btn {
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+}
+
+.resume-btn-text {
+    text-align: center;
+    font-size: 20px;
+    border: lightblue solid 3px;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+.resume-btn-text:hover {
+    background-color: lightblue;
+}
+
+@media (max-width: 800px) {
+    .resume-image {
+        display: none;
+    }
+
+    .resume-section-header {
+        margin: 30px 0;
+    }
+}
+
+@media (max-width: 700px) {
+    .resume-dates {
+        display: none;
+    }
+}
+
+@media (max-width: 600px) {
+    .about-image {
+        display: block;
+        float: none;
+        margin-left: auto;
+        margin-right: auto;
+        width: 80%;
+        max-width: 200px;
+    }   
+
+    .name-title {
+        font-size: 3em;
+    }
+    
+    .aspiration-title {
+        font-size: 1.5em;
+    }
+
+    .main-nav {
+        font-size: 1em;
+        border-bottom: 1px solid black;
+        text-align: center;
+        font-weight: normal;
+    }
+}
+
+@media (max-width: 400px) {
+    .resume-section-whole {
+        font-size: 16px;
+    }
+
+    .resume-skill {
+        font-size: 12px;
+    }
+
+    .about-me-section p {
+        font-size: 16px;
+    }
+
+    .section-header {
+        font-size: 16px;
+    }
+
+    .name-title {
+        font-size: 2em;
+    }
+    
+    .aspiration-title {
+        font-size: 1.2em;
+    }
+
+    .icon-image {
+        width: 20px;
+    }
+
+    .main-nav {
+        font-size: 12px;
+    }
+}
